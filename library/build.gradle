@@ -3,13 +3,13 @@ apply plugin: 'maven'
 
 android {
     compileSdkVersion 29
-    buildToolsVersion "28.0.3"
+    buildToolsVersion "29.0.3"
 
     defaultConfig {
         minSdkVersion 14
         targetSdkVersion 29
-        versionCode 28
-        versionName "0.9.27"
+        versionCode 29
+        versionName "0.9.28"
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
 
@@ -25,7 +25,8 @@ android {
 dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])
     implementation 'androidx.appcompat:appcompat:1.1.0'
-    implementation 'com.google.android.material:material:1.0.0'
+    implementation 'com.google.android.material:material:1.1.0'
+    implementation 'androidx.swiperefreshlayout:swiperefreshlayout:1.0.0'
 
     testImplementation 'junit:junit:4.12'
 
@@ -44,7 +45,7 @@ uploadArchives {
     repositories {
         mavenInstaller {
             pom.version = android.defaultConfig.versionName
-            pom.groupId = 'com.github.mariotaku'
+            pom.groupId = 'com.github.tlaster'
             pom.artifactId = rootProject.name
         }
     }

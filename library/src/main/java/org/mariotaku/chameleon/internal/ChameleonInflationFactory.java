@@ -75,27 +75,27 @@ public class ChameleonInflationFactory implements LayoutInflater.Factory2 {
 
         } else switch (name) {
             case "TextView":
-            case "android.support.v7.widget.AppCompatTextView": {
+            case "androidx.appcompat.widget.AppCompatTextView": {
                 view = new ChameleonTextView(context, attrs);
                 break;
             }
             case "EditText":
-            case "android.support.v7.widget.AppCompatEditText": {
+            case "androidx.appcompat.widget.AppCompatEditText": {
                 view = new ChameleonEditText(context, attrs);
                 break;
             }
             case "AutoCompleteTextView":
-            case "android.support.v7.widget.AppCompatAutoCompleteTextView": {
+            case "androidx.appcompat.widget.AppCompatAutoCompleteTextView": {
                 view = new ChameleonAutoCompleteTextView(context, attrs);
                 break;
             }
             case "MultiAutoCompleteTextView":
-            case "android.support.v7.widget.AppCompatMultiAutoCompleteTextView": {
+            case "androidx.appcompat.widget.AppCompatMultiAutoCompleteTextView": {
                 view = new ChameleonMultiAutoCompleteTextView(context, attrs);
                 break;
             }
             case "Button":
-            case "android.support.v7.widget.AppCompatButton": {
+            case "androidx.appcompat.widget.AppCompatButton": {
                 view = new ChameleonButton(context, attrs);
                 break;
             }
@@ -104,50 +104,50 @@ public class ChameleonInflationFactory implements LayoutInflater.Factory2 {
                 break;
             }
             case "SeekBar":
-            case "android.support.v7.widget.AppCompatSeekBar": {
+            case "androidx.appcompat.widget.AppCompatSeekBar": {
                 view = new ChameleonSeekBar(context, attrs);
                 break;
             }
             case "RadioButton":
-            case "android.support.v7.widget.AppCompatRadioButton": {
+            case "androidx.appcompat.widget.AppCompatRadioButton": {
                 view = new ChameleonRadioButton(context, attrs);
                 break;
             }
             case "CheckBox":
-            case "android.support.v7.widget.AppCompatCheckBox": {
+            case "androidx.appcompat.widget.AppCompatCheckBox": {
                 view = new ChameleonCheckBox(context, attrs);
                 break;
             }
             case "CheckedTextView":
-            case "android.support.v7.widget.AppCompatCheckedTextView": {
+            case "androidx.appcompat.widget.AppCompatCheckedTextView": {
                 view = new ChameleonCheckedTextView(context, attrs);
                 break;
             }
-            case "android.support.design.widget.CoordinatorLayout": {
+            case "androidx.coordinatorlayout.widget.CoordinatorLayout": {
                 view = new ChameleonCoordinatorLayout(context, attrs);
                 break;
             }
-            case "android.support.design.widget.FloatingActionButton": {
+            case "com.google.android.material.floatingactionbutton.FloatingActionButton": {
                 view = new ChameleonFloatingActionButton(context, attrs);
                 break;
             }
-            case "android.support.v7.widget.ActionBarContainer": {
+            case "androidx.appcompat.widget.ActionBarContainer": {
                 view = new ChameleonActionBarContainer(context, attrs);
                 break;
             }
-            case "android.support.v7.widget.ActionBarContextView": {
+            case "androidx.appcompat.widget.ActionBarContextView": {
                 view = new ChameleonActionBarContextView(context, attrs);
                 break;
             }
-            case "android.support.v4.widget.SwipeRefreshLayout": {
+            case "androidx.swiperefreshlayout.widget.SwipeRefreshLayout": {
                 view = new ChameleonSwipeRefreshLayout(context, attrs);
                 break;
             }
-            case "android.support.v7.widget.SwitchCompat": {
+            case "androidx.appcompat.widget.SwitchCompat": {
                 view = new ChameleonSwitchCompat(context, attrs);
                 break;
             }
-            case "android.support.v7.widget.Toolbar": {
+            case "androidx.appcompat.widget.Toolbar": {
                 view = new ChameleonToolbar(context, attrs);
                 break;
             }
